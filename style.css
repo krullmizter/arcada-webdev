@@ -9,19 +9,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--color-black);
 }
 
 #header .header-mainMenu {
-    background-color: var(--color-transparent);
     margin-right: 1rem;
 }
 
-#header .header-mainMenu li {
+#header .header-mainMenu li,
+#header .header-mainMenu a {
     display: inline;
     list-style: none;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.4rem;
 }
 
-#header .header-mainMenu li:not(:last-of-type) {
+#header .header-mainMenu li {
     padding: 0 2rem;
 }
 
@@ -40,6 +44,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    text-align: center;
     background-color: var(--color-black);
     color: var(--color-white);
 }
