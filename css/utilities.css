@@ -1,0 +1,11 @@
+.u-scroll {
+    position: absolute;
+    bottom: 0;
+}
+
+.u-scroll::before {
+    content: "\f078";
+    font-family: "FontAwesome";
+    font-size: 3rem;
+    color: var(--color-white);
+}
