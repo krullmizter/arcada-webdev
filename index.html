@@ -7,22 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Layerlink | Develope, Design & Deploy</title>
     <script src="https://kit.fontawesome.com/e17aad6c5d.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/typo.css">
-    <link rel="stylesheet" href="css/utilities.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/frontpage.css">
 </head>
 
 <body>
-
     <header id="header">
         <a class="header_logo" href="#"></a>
         <nav class="header_mainMenu">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">FAQ</a></li>
                 <li><a href="#">Contact</a></li>
+
+                <li class="header_mainMenu-social"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="header_mainMenu-social"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -31,35 +38,64 @@
         <div class="content">
             <div class="content_coverArea">
                 <h1>Welcome To Layerlink</h1>
-                <h6>We Develope, Design & Deploy</h6>
+                <h5>We Develope, Design & Deploy</h5>
 
-                <a href="#content_weDo" class="u-scroll"></a>
+                <a href="#content_select" class="scroll_down"></a>
             </div>
 
-            <div id="content_weDo">
-                <div class="content_weDo-first">
-                    We specalize in creating modern and reliable web applications and software.
-                    <a href="#">Learn more about our services.</a>
+            <div id="content_select">
+                <div class="content_select-parent -parentFirst">
+                    <div class="content_select-child">
+                        <span class="fa-stack fa-3x">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-code fa-stack-1x fa-inverse"></i>
+                         </span>
+    
+                         <h1>Development Is Our A Game</h1>
+                         <p>We design business grade services & solutions for small, medium and large scale clients. We have the solution for your needs.</p>
+                         <a href="#" class="btn_default">View our services</a>
+                    </div>
                 </div>
 
-                <div class="content_weDo-second">
-                    Our developers and designers are prepaird to take on any challange.
-                    <a href="#">Meet the a-team.</a>
-                </div>
-
-                <div class="content_weDo-third">
-                    Our company is one of the best in the world, in specialing in modern development.
-                    <a href="#">Read our story.</a>
+                <div class="content_select-parent -parentSecond">
+                    <div class="content_select-child">
+                        <span class="fa-stack fa-3x">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-gem fa-stack-1x fa-inverse"></i>
+                        </span>
+              
+                        <h1>Providing Quality Services</h1>
+                        <p>Our long history of Development, designing & deployment makes us the best in the business, with 24/7 support, strong CLAs & a love for what we produce</p>
+                        <a href="#" class="btn_default">More about us</a>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>    
 
     <footer id="footer">
-        <div class="footer_content">
-            <p>This website was created with alot of <i class="fas fa-coffee"></i> and <i class="fas fa-heart"></i> by Layerlink &copy;</p>
+        <div class="footer_container">
+            <ul class="footer_container-content">
+                <h5>Navigation</h5>
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <ul class="footer_container-content">
+                <h5>Links</h5>
+            </ul>
+
+            <ul class="footer_container-content">
+                <h5>Contact</h5>
+            </ul>
+        </div>
+
+        <div class="footer_bottomBar">
+            <p>This website was created with a lot of <i class="fas fa-coffee"></i> and <i class="fas fa-heart"></i> by Layerlink &copy; All Rights Reserved 2019</p>
         </div>
     </footer>
-
 </body>
 </html>

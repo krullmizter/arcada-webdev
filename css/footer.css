@@ -1,0 +1,42 @@
+#footer {
+    padding: 3rem 0;
+    color: var(--color-white);
+}
+
+#footer .footer_container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 10% 3rem 10%;
+}
+
+#footer .footer_container .footer_container-content {
+    list-style: none;
+}
+
+#footer .footer_container .footer_container-content h5 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.75rem;
+}
+
+#footer .footer_container .footer_container-content a {
+    font-weight: 500;
+    transition: .2s;
+}
+
+#footer .footer_container .footer_container-content a:hover {
+    color: var(--color-primary);
+}
+
+#footer .footer_container .footer_container-content li:not(:last-child) {
+    margin: 1.25rem 0;
+}
+
+#footer .footer_bottomBar {
+    text-align: center;
+}
+
+#footer .footer_bottomBar .fa-heart {
+    color: var(--color-red);
+}

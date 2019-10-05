@@ -1,0 +1,64 @@
+.fa-stack .fas.fa-circle {
+    color: var(--color-black);
+}
+
+.btn_default {
+    display: inline-flex;
+    text-transform: uppercase;
+    background-color: var(--color-transparent);
+    color: var(--color-white);
+    font-weight: 600;
+    padding: 1rem;
+    margin-top: 1.25rem;
+    border: 2px solid var(--color-white);
+    border-radius: .2rem;
+    transition: all .25s;
+}
+
+.btn_default:after {
+    content: "\f105";
+    font-family: "FontAwesome";
+    margin-left: .5rem;
+    font-weight: initial;
+    font-size: 1.75rem;
+}
+
+.btn_default:hover {
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border-color: var(--color-black);
+}
+
+.scroll_down {
+    position: absolute;
+    bottom: 5%;
+}
+
+.scroll_down::before {
+    content: "\f078";
+    font-family: "FontAwesome";
+    font-size: 3rem;
+    color: var(--color-white);
+    transition: .2s;
+}
+
+.scroll_down:hover::before{
+    color: var(--color-primary);
+}
+
+.scroll_top {
+    position: absolute;
+    right: 2%;
+}
+
+.scroll_top::before {
+    content: "\f106";
+    font-family: "FontAwesome";
+    font-size: 3rem;
+    color: var(--color-black);
+    transition: .2s;
+}
+
+.scroll_top:hover::before{
+    color: var(--color-primary);
+}

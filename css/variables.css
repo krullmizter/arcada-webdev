@@ -1,9 +1,10 @@
 :root {
-    --color-black: #0f0a0a;
-    --color-white: #f5efed;
+    --color-black: #0e0e0d;
+    --color-white: #f7fff7;
+    --color-grey: #343434;
     --color-transparent: rgba(0, 0, 0, 0);
 
-    --color-primary: #fcba04;
-    --color-secondary: #2274a5;
-    --color-third: #4281a4;
+    --color-primary: #335889;
+    --color-secondary: #264164;
+    --color-red: #6b0504;
 }
