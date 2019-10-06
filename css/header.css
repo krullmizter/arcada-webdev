@@ -31,7 +31,8 @@
     color: var(--color-white);
 }
 
-#header .header_mainMenu a:hover {
+#header .header_mainMenu a:active,
+#header .header_mainMenu a:focus {
     color: var(--color-primary);
 }
 

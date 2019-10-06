@@ -1,32 +1,33 @@
-.content_coverArea {
+.fp-cover {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     text-align: center;
     background: linear-gradient(0deg,rgba(15,10,15,0.75), rgba(15,10,15,0.75)), url("../images/fontpageBg.jpg") no-repeat fixed center;
     background-size: cover;
     color: var(--color-white);
+    height: 100vh;
 }
 
-.content_coverArea h1 {
+.fp-cover h1 {
     font-size: 7.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
-.content_coverArea h5 {
+.fp-cover h5 {
     font-size: 3rem;
     font-weight: 500;
 }
 
-#content_select {
+
+#fp-cards {
     display: flex;
     flex-wrap: wrap;
 }
 
-.content_select-parent {
+.fp-cards__parent {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,30 +36,30 @@
     height: 75vh;
 }
 
-.content_select-child {
+.fp-cards__child {
     text-align: center;
     margin: 0 22%;
     color: var(--color-white);
 }
 
-.content_select-child span {
+.fp-cards__child span {
     margin-bottom: 1.5rem;
     color: initial;
 }
 
-.content_select-child p {
+.fp-cards__child p {
     font-size: 2rem;
     font-weight: 500;
     line-height: 2.75rem;
     margin: 1.5rem 0;
 }
 
-.-parentFirst {
+.-parentOne {
     background: linear-gradient(0deg,rgba(15,10,15,0.6), rgba(15,10,15,0.75)), url("../images/frontpageDev.jpg") no-repeat center;
     background-size: cover;
 }
 
-.-parentSecond {
+.-parentTwo {
     background: linear-gradient(0deg,rgba(15,10,15,0.6), rgba(15,10,15,0.75)), url("../images/frontpageMeeting.jpg") no-repeat center;
     background-size: cover;
 }

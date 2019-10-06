@@ -1,0 +1,11 @@
+.s-cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    height: 40vh;
+    background: linear-gradient(0deg,rgba(15,10,15,0.75), rgba(15,10,15,0.75)), url("../images/servicesCover.jpg") no-repeat fixed center;
+    background-size: cover;
+}
