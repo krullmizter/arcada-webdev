@@ -1,20 +1,27 @@
 #header {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     position: absolute;
     height: 12rem;
     width: 100%;
-    background-color: var(--color-transparent);
+    text-align: center;
 }
 
-#header .header_mainMenu li {
+.header_logo {
+    background: url("../images/logo.png") no-repeat center;
+    background-size: contain;
+    height: 7.5rem;
+    width: 7.5rem;
+}
+
+.header_mainMenu li {
     padding: 0 2.25rem;
     display: inline;
     list-style: none;
 }
 
-#header .header_mainMenu a {
+.header_mainMenu a {
     text-decoration: none;
     font-weight: 700;
     font-size: 1.5rem;
@@ -23,21 +30,42 @@
     transition: .2s;
 }
 
-#header .header_mainMenu-social a {
+.header_mainMenu-social a {
     font-weight: 300;
 }
 
-#header .header_mainMenu a {
+.header_mainMenu a {
     color: var(--color-white);
 }
 
-#header .header_mainMenu a:active,
-#header .header_mainMenu a:focus {
+.header_mainMenu a:active,
+.header_mainMenu a:focus {
     color: var(--color-primary);
 }
 
-#header .header_mainMenu a:active,
-#header .header_mainMenu a:focus,
-#header .header_mainMenu a:hover {
+.header_mainMenu a:active,
+.header_mainMenu a:focus,
+.header_mainMenu a:hover {
     border-bottom: 2px solid var(--color-primary);
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+
+    #header {
+        height: 14rem;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .header_logo {
+        margin: 1.5rem 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .header_mainMenu ul {
+        display: flex;
+        flex-direction: column;
+    }
 }

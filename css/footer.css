@@ -1,42 +1,66 @@
 #footer {
-    padding: 3rem 0;
+    padding: 5rem 0;
     color: var(--color-white);
 }
 
-#footer .footer_container {
+.footer_container {
     display: flex;
     justify-content: space-evenly;
     padding: 0 10% 3rem 10%;
 }
 
-#footer .footer_container .footer_container-content {
+.footer_container-content {
     list-style: none;
+    width: 100%;
 }
 
-#footer .footer_container .footer_container-content h5 {
+.footer_container-content:nth-child(2) {
+    text-align: center;
+}
+
+.footer_container-content:nth-child(3) {
+    text-align: right;
+}
+
+.footer_container-content h5 {
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 1.75rem;
+    margin-bottom: 1rem;
 }
 
-#footer .footer_container .footer_container-content a {
+.footer_container-content a {
     font-weight: 500;
     transition: .2s;
 }
 
-#footer .footer_container .footer_container-content a:hover {
-    color: var(--color-primary);
+.footer_container-content a:hover,
+.footer_container-content a:focus,
+.footer_container-content a:active {
+    border-bottom: 2px solid var(--color-primary);
 }
 
-#footer .footer_container .footer_container-content li:not(:last-child) {
-    margin: 1.25rem 0;
+.footer_container-content li:not(:last-child) {
+    margin: 5px 0;
 }
 
-#footer .footer_bottomBar {
+.footer_bottomBar {
     text-align: center;
 }
 
-#footer .footer_bottomBar .fa-heart {
+.footer_bottomBar .fa-heart {
     color: var(--color-red);
+}
+
+@media screen and (max-width: 768px) {
+
+    .footer_container {
+        flex-direction: column;
+    }
+
+    .footer_container .footer_container-content {
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 4rem;
+    }
 }

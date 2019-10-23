@@ -9,3 +9,47 @@
     background: linear-gradient(0deg,rgba(15,10,15,0.75), rgba(15,10,15,0.75)), url("../images/servicesCover.jpg") no-repeat fixed center;
     background-size: cover;
 }
+
+#s-cards {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+    background-color: var(--color-secondary);
+}
+
+.s-cards__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 0;
+    text-align: center;
+    color: var(--color-white);
+    padding: 0 5%;
+}
+
+.s-cards__content span {
+    margin-bottom: 1.5rem;
+    color: initial;
+}
+
+.s-cards__content p {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.75rem;
+    margin: 1.5rem 0;
+}
+
+#s-iterlabs {
+    height: 30rem;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+}
+
+@media screen and (max-width: 1200px) {
+
+    #s-cards {
+        height: 100%;
+        flex-direction: column;
+    }
+}

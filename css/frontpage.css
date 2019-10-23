@@ -1,65 +1,26 @@
-.fp-skew__containerOne,
-.fp-skew__containerTwo {
-    height: 33vh;
-    position: relative;
-    overflow: hidden;
-}
-
-.fp-skew__containerOne h1,
-.fp-skew__containerTwo h1 {
-    position: relative;
-    color: var(--color-white);
-}
-
-.fp-skew__contentOne,
-.fp-skew__contentTwo {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.fp-skew__contentOne {
-    background-image: linear-gradient(#ff9d2f, #ff6126);
-    transform: skewY(-6deg);
-    transform-origin: top left;
-}
-
-.fp-skew__contentTwo {
-    background-image: linear-gradient(#ff9d2f, #ff6126);
-    transform: skewY(-6deg);
-    transform-origin: top left;
-}
-
 #fp-cards {
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
 }
 
-.fp-cards__parent {
+.fp-cards__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex: 1 1 0;
-    height: 75vh;
-}
-
-.fp-cards__child {
     text-align: center;
-    margin: 0 22%;
     color: var(--color-white);
+    padding: 7.5% 5%;
 }
 
-.fp-cards__child span {
+.fp-cards__content span {
     margin-bottom: 1.5rem;
     color: initial;
 }
 
-.fp-cards__child p {
+.fp-cards__content p {
     font-size: 2rem;
     font-weight: 500;
     line-height: 2.75rem;
@@ -74,4 +35,15 @@
 .-parentTwo {
     background: linear-gradient(0deg,rgba(15,10,15,0.6), rgba(15,10,15,0.75)), url("../images/frontpageMeeting.jpg") no-repeat center;
     background-size: cover;
+}
+
+#fp-map {
+    height: 40rem;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    #fp-cards {
+        flex-direction: column;
+    }
 }
