@@ -13,7 +13,7 @@
 #s-cards {
     display: flex;
     flex-wrap: wrap;
-    height: 50vh;
+    height: 50rem;
     background-color: var(--color-secondary);
 }
 
@@ -38,6 +38,35 @@
     font-weight: 500;
     line-height: 2.75rem;
     margin: 1.5rem 0;
+}
+
+.readMore {
+    display: none;
+}
+
+#s-meeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    background: linear-gradient(0deg,rgba(15,10,15,0.75), rgba(15,10,15,0.75)), url("../images/sMeeting.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+
+#s-meeting .s-meeting__container h1,
+#s-meeting .s-meeting__container h4 {
+    font-family: 'Kalam', cursive;
+    color: var(--color-white);
+}
+
+.s-meeting__container h1 {
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.s-meeting__container h4 {
+    text-align: right;
+    font-size: 2rem;
 }
 
 #s-iterlabs {

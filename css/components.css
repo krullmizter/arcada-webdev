@@ -1,4 +1,4 @@
-.cover-fp {
+.cover__fp {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,7 +11,7 @@
     height: 100vh;
 }
 
-.cover-subsite {
+.cover__subsite {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,20 +19,32 @@
     text-align: center;
     color: var(--color-white);
 
-    height: 50vh;
+    height: 50rem;
     background: linear-gradient(0deg,rgba(15,10,15,0.75), rgba(15,10,15,0.75)), url("../images/servicesCover.jpg") no-repeat fixed center;
     background-size: cover;
 }
 
-.cover-fp h1,
-.cover-subsite h1 {
+.cover__subsite-services {
+    background: linear-gradient(0deg,rgba(15,10,15,0.75), rgba(15,10,15,0.75)), url("../images/services.jpg") no-repeat fixed center;
+}
+
+.cover__subsite-projects {
+    background: linear-gradient(0deg,rgba(15,10,15,0.75), rgba(15,10,15,0.75)), url("../images/servicesCover.jpg") no-repeat fixed center;
+}
+
+.cover__subsite-contact {
+    background: linear-gradient(0deg,rgba(15,10,15,0.75), rgba(15,10,15,0.75)), url("../images/services.jpg") no-repeat fixed center;
+}
+
+.cover__fp h1,
+.cover__subsite h1 {
     font-size: 7.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
-.cover-fp h5,
-.cover-subsite h5 {
+.cover__fp h5,
+.cover__subsite h5 {
     font-size: 3rem;
     font-weight: 500;
 }
@@ -42,31 +54,58 @@
     color: var(--color-black);
 }
 
-.btn_default {
+.btn {
     display: inline-flex;
     text-transform: uppercase;
-    background-color: var(--color-transparent);
-    color: var(--color-white);
     font-weight: 600;
     padding: 1rem;
     margin-top: 1.25rem;
-    border: 2px solid var(--color-white);
-    border-radius: .2rem;
     transition: all .25s;
 }
 
-.btn_default:after {
-    content: "\f105";
+.btn:after {
     font-family: "FontAwesome";
     margin-left: .5rem;
     font-weight: initial;
     font-size: 1.75rem;
 }
 
+.btn_default {
+    background-color: var(--color-transparent);
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
+    border-radius: .2rem;
+}
+
+.btn_default:after {
+    content: "\f105";
+}
+
 .btn_default:hover {
     color: var(--color-white);
     background-color: var(--color-black);
     border-color: var(--color-black);
+}
+
+.btn_read:after {
+    content: "\f055";
+}
+
+.btn_special {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: 2px solid var(--color-primary);
+    border-radius: .2rem;
+}
+
+.btn_special:after {
+    content: "\f5a1";
+}
+
+.btn_special:hover {
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    border-color: var(--color-white);
 }
 
 .scroll_down {
@@ -86,19 +125,6 @@
     color: var(--color-primary);
 }
 
-.scroll_top {
-    position: absolute;
-    right: 2%;
-}
-
-.scroll_top::before {
-    content: "\f106";
-    font-family: "FontAwesome";
-    font-size: 3rem;
-    color: var(--color-black);
-    transition: .2s;
-}
-
-.scroll_top:hover::before{
-    color: var(--color-primary);
+#map {
+    height: 40rem;
 }
